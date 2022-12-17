@@ -21,54 +21,98 @@
     <!-- Шапка сайту -->
     <header class="site-header">
       <div class="site-header__container container">
-        <nav class="nav">
-          <a class="header__logo" href="./index.html"
-            ><span class="header__logo header__logo--first">Web</span
-            ><span class="header__logo header__logo--second">Studio</span></a
-          >
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--curent" href="./index.html"
-                >Студія</a
+        <a href="./index.html" class="logo"
+          ><span class="logo__accent">Web</span>Studio</a
+        >
+
+        <div class="site-menu" id="site-menu">
+          <button class="menu-button menu-button--close">
+            <svg class="menu-button__icon" height="40" width="40">
+              <use href="./images/icons.svg#icon-close_menu"></use>
+            </svg>
+          </button>
+
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link site-nav__link--current"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a class="header-contacts__link" href="mailto:info@devstudio.com">
+                <svg
+                  class="header-contacts__icon icon-envelope"
+                  height="12"
+                  width="16"
+                >
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
               >
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Контакти</a>
-            </li>
-          </ul>
-          <ul class="nav-contact list">
-            <li class="nav-contact__item">
-              <a class="nav-contact__link" href="mailto:info@devstudio.com"
-                ><svg class="nav-contact__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                <span>info@devstudio.com</span></a
-              >
-            </li>
-            <li class="nav-contact__item">
-              <a class="nav-contact__link" href="tel:+380961111111"
-                ><svg class="nav-contact__icon" width="10" height="16">
+            <li class="header-contacts__item">
+              <a class="header-contacts__link" href="tel:+380961111111">
+                <svg
+                  class="header-contacts__icon icon-smartphone"
+                  height="16"
+                  width="10"
+                >
                   <use href="./images/icons.svg#icon-smartphone"></use></svg
-                ><span>+38 096 111 11 11</span></a
+                >+38 096 111 11 11</a
               >
             </li>
           </ul>
-        </nav>
+
+          <ul class="social-links">
+            <li class="social-links__item">
+              <a class="social-links__link" href="">Instagram</a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="">Twitter</a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="">Facebook</a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="menu-button menu-button--open"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
+          <svg class="menu-button__icon" height="40" width="40">
+            <use href="./images/icons.svg#icon-open_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Основний контент -->
     <main>
       <!-- Секція герой -->
-      <section class="section-hero">
-        <div class="section-hero__container container">
-          <h1 class="section-hero__text">
-            Ефективні рішення для вашого бізнесу
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="hero__heading">
+            Ефективні рішення для<br />
+            вашого бізнесу
           </h1>
           <button
-            class="section-hero__button button"
+            class="button big-button hero__button"
             type="button"
             data-modal-open
           >

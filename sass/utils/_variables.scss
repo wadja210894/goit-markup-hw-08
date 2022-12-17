@@ -1,19 +1,58 @@
-:root {
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
-    --accent-color: #2196f3;
-    --white-text: #ffffff;
-    --primary-bacground-color: #ffffff;
-    --secondary-bacground-color: #f5f4fa;
-    --third-bacground-color: #afb1b8;
+// Fonts
+$font-family-primary: 'Roboto', sans-serif;
+$font-family-secondary: 'Raleway', sans-serif;
 
-    // Background image gradient
-    $bg-image-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+// Text colors
+$text-color-primary: #212121;
+$text-color-secondary: #757575;
+$text-color-accent: #2196f3;
+$text-color-logo: #000;
+$text-color-footer: #fff;
+$text-color-hero: #fff;
+$text-color-caption: #fff;
+$text-color-cards-description: #fff;
+$text-color-button-text-light: #fff;
+$text-color-button-text-dark: #212121;
+$text-color-contacts: rgba(255, 255, 255, 0.6);
+$text-color-address: #fff;
+$text-color-social: #afb1b8;
+$text-color-social-hover: #fff;
+$text-color-subscription-input: #fff;
+$text-color-subscription-placeholder: rgba(255, 255, 255, 0.6);
+$text-color-order-form-placeholder: rgba(117, 117, 117, 0.5);
 
-    // Adaptive sizes
-    $mobile-fixed: 480px;
-    $mobile-max: 767px;
-    $tablet-min: 768px;
-    $tablet-max: 1199px;
-    $desktop-min: 1200px;
-}
+// Thumb colors
+$thumb-color: #afb1b8;
+$thumb-color-hover: #2196f3;
+
+// Background colors
+$bg-color-primary: #fff;
+$bg-color-dark: #2f303a;
+$bg-color-gray: #f5f4fa;
+$bg-color-caption: rgba(47, 48, 58, 0.8);
+$bg-color-cards-description: rgba(33, 150, 243, 0.9);
+$bg-color-button-primary: #f5f4fa;
+$bg-color-button-accent-primary: #2196f3;
+$bg-color-button-accent-secondary: #188ce8;
+$bg-color-backdrop: rgba(0, 0, 0, 0.2);
+$bg-color-modal: #fff;
+$bg-color-separator: rgba(33, 33, 33, 0.2);
+
+// Background image gradient
+$bg-image-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+// Border colors
+$header-border-color: #ececec;
+$portfolio-cards-border-color: #eee;
+$input-border-color-focused: #2196f3;
+$subscription-input-border-color: rgba(255, 255, 255, 0.3);
+
+// Gaps
+$list-items-gap: 30px;
+
+// Adaptive sizes
+$mobile-fixed: 480px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1199px;
+$desktop-min: 1200px;

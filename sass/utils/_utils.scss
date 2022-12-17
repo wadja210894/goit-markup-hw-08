@@ -1,31 +1,78 @@
-.list {
-    list-style-type: none;
-    padding-left: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
     margin: 0;
+    padding: 0;
 }
 
-.link {
-    text-decoration: none;
+ul {
+    list-style: none;
 }
 
-.container {    
-    margin: 0 auto;
-    padding: 0 15px;
+body {
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 
-    @media screen and (max-width: 480px) {
-        width: 100%;        
+    color: $text-color-primary;
+}
+
+container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: $mobile-fixed;
+
+    @media screen and (max-width: $mobile-fixed) {
+        width: 100%;
     }
-    
-    @media screen and (min-width: 768px) {
-        width: 768px;        
+
+    @media screen and (min-width: $tablet-min) {
+        width: $tablet-min;
     }
-    
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
+
+    @media screen and (min-width: $desktop-min) {
+        width: $desktop-min;
     }
 }
 
-.visually-hidden {
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop-min) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.image-block {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+
+    @media screen and (min-width: $desktop-min) {
+        font-size: 36px;
+    }
+}
+
+.visibility-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -36,10 +83,4 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
-
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
 }
