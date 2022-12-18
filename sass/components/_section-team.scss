@@ -1,97 +1,132 @@
-.our-team {
-    padding: 94px 0px;
-    background-color: var(--secondary-bacground-color);
+.team {
+    background-color: $bg-color-gray;
+}
+.team-cards {
+    margin-top: 30px;
 
-    &__title {
-        margin: 0;
-        margin-bottom: 50px;
-
-        font-weight: 700;
-        font-size: 36px;
-        line-height: calc(42 / 36);
-        text-align: center;
-        color: var(--primary-text-color);
-    }
-
-    &__list {
+    @media screen and (min-width: $tablet-min) {
         display: flex;
+
+        @media screen and (max-width: $tablet-max) {
+            flex-wrap: wrap;
+
+            margin-top: 30px - #{$list-items-gap};
+        }
     }
 
-    &__item {
-        flex-basis: calc((100% - 30px) / 4);
-        margin-right: 30px;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
+    @media screen and (min-width: $desktop-min) {
+        margin-top: 50px;
+    }
+}
+
+.team-cards__item {
+    background-color: $bg-color-primary;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: $mobile-max) {
+        &:not(:first-child) {
+            margin-top: $list-items-gap;
+        }
+
+        &>.image-block {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
-    &__item:last-child {
-        margin-right: 0px;
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+        flex-basis: calc((100% - #{$list-items-gap}) / 2);
+
+        margin-top: $list-items-gap;
+
+        &:nth-child(even) {
+            margin-left: $list-items-gap;
+        }
     }
 
-    &__image {
-        display: block;
+    @media screen and (min-width: $desktop-min) {
+        flex-basis: calc((100% - #{$list-items-gap} * 3) / 4);
+
+        &:not(:first-child) {
+            margin-left: $list-items-gap;
+        }
     }
+}
 
-    &__wrapper {
-        padding: 30px 0px;
-        background-color: var(--white-text);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+.team-cards__thumb {
+    @media screen and (max-width: $mobile-fixed) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
     }
+}
 
-    &__subtitle {
-        margin: 0;
-        margin-bottom: 10px;
-
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(19 / 16);
-        text-align: center;
-        color: var(--primary-text-color);
+.team-cards__image {
+    @media screen and (max-width: $mobile-fixed) {
+        height: 100%;
+        width: auto;
     }
+}
 
-    &__text {
-        margin: 0;
+.team-cards__description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
-        font-size: 16px;
-        line-height: calc(19 / 16);
-        text-align: center;
-        margin-bottom: 16px;
+.team-cards__heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team-cards__position {
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    color: $text-color-secondary;
+}
+
+.team-cards__social-buttons {
+    margin-top: 16px;
+    justify-content: center;
+}
+
+.social-buttons {
+    display: flex;
+}
+
+.social-buttons__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-buttons__link {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+
+    border-radius: 50%;
+
+    color: $text-color-social;
+    background-color: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $text-color-social-hover;
+        background-color: $bg-color-button-accent-primary;
     }
 }
 
 
-
-.social {
-    display: flex;
-    justify-content: center;
-
-    &__logo {
-        display: flex;
-        margin-right: 10px;
-    }
-
-    &__logo:last-child {
-        margin-right: 0px;
-    }
-
-    &__link {
-        display: flex;
-        width: 44px;
-        height: 44px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        fill: var(--third-bacground-color);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            background-color: var(--accent-color);
-            fill: var(--white-text);
-            cursor: pointer;
-        }
-    }    
+.social-buttons__icon {
+    --color1: currentColor;
 }
