@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студія</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,12 +12,15 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Студія</title>
   </head>
-  <body class="body">
-    <!-- Шапка сайту -->
+  <body>
     <header class="site-header">
       <div class="site-header__container container">
         <a href="./index.html" class="logo"
@@ -102,9 +104,8 @@
         </button>
       </div>
     </header>
-    <!-- Основний контент -->
+
     <main>
-      <!-- Секція герой -->
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__heading">
@@ -120,7 +121,7 @@
           </button>
         </div>
       </section>
-      <!-- Секція наші переваги -->
+
       <section class="features section">
         <div class="container">
           <h2 class="features__heading visibility-hidden">Особливості</h2>
@@ -175,7 +176,7 @@
           </ul>
         </div>
       </section>
-      <!-- Секція чим ми займаємося -->
+
       <section class="competence section">
         <div class="container">
           <h2 class="competence__heading heading">Чим ми займаємося</h2>
@@ -186,7 +187,7 @@
                   class="image-block"
                   srcset="./images/coding.jpg 1x, ./images/coding@2x.jpg 2x"
                   src="./images/coding.jpg"
-                  alt="робота за компютером"
+                  alt="Верстаємо сайти"
                   width="370"
                 />
                 <span class="competence-list__caption">Десктопні додатки</span>
@@ -201,7 +202,7 @@
                     ./images/adaptation@2x.jpg 2x
                   "
                   src="./images/adaptation.jpg"
-                  alt="робота за телефоном"
+                  alt="Адаптуємо під різні пристрої"
                   width="370"
                 />
                 <span class="competence-list__caption">Мобільні додатки </span>
@@ -213,7 +214,7 @@
                   class="image-block"
                   srcset="./images/coloring.jpg 1x, ./images/coloring@2x.jpg 2x"
                   src="./images/coloring.jpg"
-                  alt="робота за планшетом"
+                  alt="Підбираємо кольорову гаму"
                   width="370"
                 />
                 <span class="competence-list__caption"
@@ -224,7 +225,7 @@
           </ul>
         </div>
       </section>
-      <!-- Секція наша команда -->
+
       <section class="team section">
         <div class="container">
           <h2 class="team__heading heading">Наша команда</h2>
@@ -441,7 +442,7 @@
           </ul>
         </div>
       </section>
-      <!-- Секція клієнти -->
+
       <section class="clients section">
         <div class="container">
           <h2 class="clients__heading heading">Постійні клієнти</h2>
@@ -492,7 +493,7 @@
         </div>
       </section>
     </main>
-    <!-- Підвал сайту -->
+
     <footer class="site-footer">
       <div class="site-footer__container container">
         <div class="site-footer__links-section">
@@ -601,7 +602,7 @@
         </div>
       </div>
     </footer>
-    <!-- Модальне вікно -->
+
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal" data-modal>
         <button class="modal__close" data-modal-close>
@@ -685,7 +686,6 @@
         </form>
       </div>
     </div>
-    <!-- Скрипти -->
 
     <script
       defer
