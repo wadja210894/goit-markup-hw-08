@@ -1,0 +1,25 @@
+.footer-contacts {
+    margin-top: 20px;
+}
+
+.footer-contacts__item:not(:first-child) {
+    margin-top: 9px;
+}
+
+.footer-contacts__link {
+    font-style: normal;
+    text-decoration: none;
+
+    color: $text-color-contacts;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $text-color-accent;
+    }
+
+    &--address {
+        color: $text-color-address;
+    }
+}

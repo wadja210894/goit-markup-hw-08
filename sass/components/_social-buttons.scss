@@ -1,0 +1,32 @@
+.social-buttons {
+    display: flex;
+}
+
+.social-buttons__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-buttons__link {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+
+    border-radius: 50%;
+
+    color: $text-color-social;
+    background-color: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $text-color-social-hover;
+        background-color: $bg-color-button-accent-primary;
+    }
+}
+
+
+.social-buttons__icon {
+    --color1: currentColor;
+}

@@ -1,0 +1,20 @@
+.site-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $header-border-color;
+
+    @media screen and (min-width: $tablet-min) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.site-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: $tablet-min) {
+        justify-content: flex-start;
+    }
+}

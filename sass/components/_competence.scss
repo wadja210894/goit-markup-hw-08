@@ -1,0 +1,45 @@
+.competence {
+  padding-top: 0;
+
+  @media screen and (max-width: $desktop-min) {
+    display: none;
+  }
+}
+
+.competence-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.competence-list__item {
+  flex-basis: calc((100% - #{$list-items-gap} * 2) / 43);
+
+  &:not(:first-child) {
+    margin-left: $list-items-gap;
+  }
+}
+
+.competence-list__link {
+  position: relative;
+
+  display: block;
+}
+
+.competence-list__caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.17;
+
+  color: $text-color-caption;
+  background-color: $bg-color-caption;
+}
